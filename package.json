@@ -2,16 +2,6 @@
   "name": "quorum",
   "version": "0.1.0",
   "description": "A distributed, strongly consistent key-value database, built from scratch in Node.js.",
-  "type": "module",
-  "main": "src/index.mjs",
-  "bin": {
-    "quorumd": "./src/cli/quorumd.mjs",
-    "quorumctl": "./src/cli/quorumctl.mjs"
-  },
-  "scripts": {
-    "test": "node --test test/**/*.test.mjs",
-    "typecheck": "tsc --noEmit"
-  },
   "keywords": [
     "distributed-database",
     "key-value-store",
@@ -20,13 +10,33 @@
     "lsm-tree",
     "mvcc"
   ],
-  "author": "",
+  "homepage": "https://github.com/handel-hub/Quorum#readme",
+  "bugs": {
+    "url": "https://github.com/handel-hub/Quorum/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/handel-hub/Quorum.git"
+  },
   "license": "ISC",
-  "engines": {
-    "node": ">=20.0.0"
+  "type": "module",
+  "main": "src/index.mjs",
+  "bin": {
+    "quorumd": "src/cli/quorumd.mjs",
+    "quorumctl": "src/cli/quorumctl.mjs"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.mjs",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "fast-check": "^3.23.2",
     "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
